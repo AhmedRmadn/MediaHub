@@ -1,0 +1,65 @@
+package mediahub.dto;
+
+import java.sql.Timestamp;
+
+public class ProcessVideoDTO {
+
+	public ProcessVideoDTO() {
+		
+	}
+	private String fileName;
+	private String uploaderId; // Optional: for multi-user support
+	private int totalChunks;
+	private Timestamp uploadTime;
+	private String storageUploadKey;
+	private String title;
+	private String description;
+	
+	
+	public String getFileName() {
+		return fileName;
+	}
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+	public String getUploaderId() {
+		return uploaderId;
+	}
+	public void setUploaderId(String uploaderId) {
+		this.uploaderId = uploaderId;
+	}
+	public int getTotalChunks() {
+		return totalChunks;
+	}
+	public void setTotalChunks(int totalChunks) {
+		this.totalChunks = totalChunks;
+	}
+	public Timestamp getUploadTime() {
+		return uploadTime;
+	}
+	public void setUploadTime(Timestamp uploadTime) {
+		this.uploadTime = uploadTime;
+	}
+
+	public String getStorageUploadKey() {
+		return storageUploadKey;
+	}
+	public void setStorageUploadKey(String storageUploadKey) {
+		this.storageUploadKey = storageUploadKey;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	
+	
+
+}
